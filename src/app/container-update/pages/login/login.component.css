@@ -1,0 +1,45 @@
+body {
+  background-color: aqua;
+}
+
+.cont {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: right;
+  align-items: center;
+  background-image: url(/assets/images/login-background.jpg);
+  background-size: cover;
+}
+
+.login-logo {
+  width: 20em;
+  height: 10em;
+}
+
+form {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border-radius: 0.5em;
+  padding: 4em 2em;
+  margin-right: 7em;
+  background-color: white;
+}
+
+mat-form-field {
+  width: 20em;
+}
+
+.form-inputs {
+  margin-top: 5em;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+.login.button {
+  font-size: 20em;
+}

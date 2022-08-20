@@ -1,0 +1,28 @@
+<mat-drawer-container class="cont" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <button (click)="showFiller = !showFiller" routerLink="/login" class="service-button" mat-raised-button >
+      Containers
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+
+    <div class="index-logo">
+        <img src="/assets/images/eModal-logo.png" alt="EmodalLogo">
+    </div>
+
+    <div class="book-title">
+      <h1>Book our services</h1>
+    </div>
+
+    <div class="sign-in-button">
+      <button
+        type="button"
+        mat-button
+        (click)="drawer.toggle()"
+      >
+        Log in
+      </button>
+    </div>
+  </div>
+</mat-drawer-container>

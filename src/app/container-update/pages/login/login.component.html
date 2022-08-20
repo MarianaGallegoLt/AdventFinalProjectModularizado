@@ -1,0 +1,35 @@
+<div class="cont">
+  <form [formGroup]="formLogin" (ngSubmit)="loginIn()">
+    <img src="/assets/images/eModal-logo.jpg" alt="eModalLogo" class="login-logo">
+    <div class="form-inputs">
+      <div class="form-group">
+        <mat-form-field appearance="standard">
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            formControlName="email"
+            class="form-control"
+            placeholder="email@example.com"
+          />
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field appearance="standard">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            formControlName="password"
+            class="form-control"
+            type="password"
+            placeholder="Password"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="button">
+      <button mat-raised-button [disabled]="formLogin.invalid" class="login-button" color="primary">
+        Login
+      </button>
+    </div>
+  </form>
+</div>

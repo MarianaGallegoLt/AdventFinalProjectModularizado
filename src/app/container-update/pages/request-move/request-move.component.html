@@ -1,0 +1,64 @@
+<app-header></app-header>
+
+<div class="container">
+
+  <div class="select-date">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="trucking">
+    <div class="row">
+      <div class="col-6">
+        <h1>Trucking company</h1>
+        <mat-form-field class="opt" appearance="fill">
+          <mat-label>Company name</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let company of companies"
+              [value]="company.value"
+            >
+              {{ company.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col">
+        <h1>Terminal</h1>
+        <mat-form-field appearance="fill">
+          <mat-label>Terminal</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let terminal of terminals"
+              [value]="terminal.value"
+            >
+              {{ terminal.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="items-table">
+    <app-request-move-table></app-request-move-table>
+    <hr />
+  </div>
+
+  <div class="footer">
+    <h2 class="total-subtitle">Total</h2>
+    <div class="footer-buttons">
+      <button mat-raised-button routerLink="/container-list" class="footer-button" color="warn">Cancel</button>
+      <button mat-raised-button routerLink="/payment-process" class="footer-button" color="primary">Pay now</button>
+      <button mat-raised-button routerLink="/container-list" class="footer-button" color="primary">Add cart</button>
+    </div>
+  </div>
+</div>

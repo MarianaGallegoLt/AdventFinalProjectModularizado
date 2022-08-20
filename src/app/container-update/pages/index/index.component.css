@@ -1,0 +1,60 @@
+.cont {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    ),
+    url(/assets/images/index-background.jpg);
+  background-size: cover;
+}
+
+.example-sidenav-content {
+  display: inline;
+  height: 100%;
+}
+
+.example-sidenav {
+  padding: 5em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.index-logo {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.index-logo img {
+  width: 16em;
+  height: 8em;
+}
+
+.book-title {
+  margin-bottom: 8em;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Numans", sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: #12546e;
+}
+
+.sign-in-button {
+  text-align: center;
+}
+
+.sign-in-button button {
+  padding: 0.5em 1em;
+  font-size: 1.8em;
+  color: white;
+  background-color: #12546E;
+}
+
+.service-button {
+  border: #12546E solid;
+  font-size: 1.5em;
+}
