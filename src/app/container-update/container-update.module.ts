@@ -17,6 +17,7 @@ import { IndexComponent } from './pages/index/index.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -24,22 +25,15 @@ import { LoginLayoutComponent } from './layouts/login-layout/login-layout.compon
     ContainerListComponent,
     RequestMoveComponent,
     PaymentProcessComponent,
-    PaymentInformationComponent,
-    PaymentCardComponent,
-    ItemsTableComponent,
-    ContainersTableComponent,
-    RequestMoveTableComponent,
-    IndexComponent,
-    MainLayoutComponent,
-    LoginLayoutComponent
+    IndexComponent
   ],
   imports: [
     CommonModule,
     AngularMaterialModule,
     SharedModule,
     Routing,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    ComponentsModule
   ]
 })
 export class ContainerUpdateModule { }

@@ -1,11 +1,19 @@
-.container {
-  margin-bottom: 10em;
-}
-
 table {
   width: 100%;
 }
 
 a {
   color: black;
+}
+
+.search-container {
+  margin-bottom: 2em;
+  margin-left: 3em;
+}
+
+.shopping-cart {
+  display: inline;
+  margin-right: 10em;
+  float: right;
+  transform: scale(2);
 }

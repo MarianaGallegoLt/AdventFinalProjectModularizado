@@ -24,4 +24,9 @@ export class ContainersTableComponent implements AfterViewInit  {
     this.dataSource.paginator = this.paginator;
   }
 
+  filterByContainerNumber(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
 }

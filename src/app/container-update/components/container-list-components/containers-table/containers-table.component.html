@@ -1,10 +1,22 @@
 <div class="container">
+  <div class="search-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Search container</mat-label>
+      <input matInput (keyup)="filterByContainerNumber($event)" />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <div class="shopping-cart">
+      <a routerLink="/payment-process"><mat-icon>shopping_cart</mat-icon></a>
+    </div>
+  </div>
   <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource">
       <!-- Position Column -->
       <ng-container matColumnDef="containerNumber">
         <th mat-header-cell *matHeaderCellDef>Container #</th>
-        <td mat-cell *matCellDef="let element">{{ element.containerNumber }}</td>
+        <td mat-cell *matCellDef="let element">
+          {{ element.containerNumber }}
+        </td>
       </ng-container>
 
       <!-- Name Column -->
@@ -38,9 +50,9 @@
       <ng-container matColumnDef="book">
         <th mat-header-cell *matHeaderCellDef>Book</th>
         <td mat-cell *matCellDef="let element">
-          <a
-          routerLink="/request-move"
-          ><mat-icon>add_shopping_cart</mat-icon></a>
+          <a routerLink="/request-move"
+            ><mat-icon>add_shopping_cart</mat-icon></a
+          >
         </td>
       </ng-container>
 
