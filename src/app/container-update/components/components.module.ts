@@ -7,7 +7,7 @@ import { PaymentInformationComponent } from './payment-components/payment-inform
 import { RequestMoveTableComponent } from './request-move-components/request-move-table/request-move-table.component';
 import { AngularMaterialModule } from 'src/app/shared/angular-material/angular-material.module';
 import { PagesModule } from '../pages/pages.module';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 
 

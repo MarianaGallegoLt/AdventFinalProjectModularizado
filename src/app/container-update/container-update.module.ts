@@ -12,12 +12,12 @@ import { ItemsTableComponent } from './components/payment-components/items-table
 import { ContainersTableComponent } from './components/container-list-components/containers-table/containers-table.component';
 import { SharedModule } from '../shared/shared.module';
 import { RequestMoveTableComponent } from './components/request-move-components/request-move-table/request-move-table.component';
-import { Routing } from '../app-routing-module';
 import { IndexComponent } from './pages/index/index.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
 import { ComponentsModule } from './components/components.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { ComponentsModule } from './components/components.module';
     CommonModule,
     AngularMaterialModule,
     SharedModule,
-    Routing,
+    RouterModule,
     ReactiveFormsModule,
     ComponentsModule
   ]

@@ -9,6 +9,7 @@ import { ComponentsModule } from '../components/components.module';
 import { AngularMaterialModule } from 'src/app/shared/angular-material/angular-material.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MainLayoutRoutingModule } from '../layouts/main-layout/main-layout-routing.module';
 
 
 
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AngularMaterialModule,
     SharedModule,
     ComponentsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MainLayoutRoutingModule
   ]
 })
 export class PagesModule { }
