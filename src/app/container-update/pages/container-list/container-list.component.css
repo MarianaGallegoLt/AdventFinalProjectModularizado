@@ -1,15 +1,8 @@
-.search-container {
-  margin-bottom: 2em;
-  margin-left: 3em;
+.example-sidenav {
+  padding: 5em;
 }
 
-.shopping-cart {
-  display: inline;
-  margin-right: 10em;
-  float: right;
-  transform: scale(2);
-}
-
-a {
-  color: black;
+.service-button {
+  border: #12546e solid;
+  font-size: 1.5em;
 }

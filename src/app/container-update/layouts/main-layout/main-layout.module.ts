@@ -4,6 +4,7 @@ import { MainLayoutRoutingModule } from './main-layout-routing.module';
 import { SharedModule } from '../../../shared/shared.module';
 import { MainLayoutComponent } from './main-layout.component';
 import { RouterModule } from '@angular/router';
+import { AngularMaterialModule } from 'src/app/shared/angular-material/angular-material.module';
 
 
 

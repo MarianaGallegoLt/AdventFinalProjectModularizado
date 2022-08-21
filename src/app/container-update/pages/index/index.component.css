@@ -10,18 +10,7 @@
   background-size: cover;
 }
 
-.example-sidenav-content {
-  display: inline;
-  height: 100%;
-}
-
-.example-sidenav {
-  padding: 5em;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
 .index-logo {
-    margin-top: 3em;
     margin-bottom: 5em;
     text-align: center;
 }
@@ -43,18 +32,13 @@ h1 {
   color: #12546e;
 }
 
-.sign-in-button {
+.login-button {
   text-align: center;
 }
 
-.sign-in-button button {
+.login-button button {
   padding: 0.5em 1em;
   font-size: 1.8em;
   color: white;
   background-color: #12546E;
-}
-
-.service-button {
-  border: #12546E solid;
-  font-size: 1.5em;
 }
