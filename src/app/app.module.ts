@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContainerUpdateModule } from './container-update/container-update.module';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({

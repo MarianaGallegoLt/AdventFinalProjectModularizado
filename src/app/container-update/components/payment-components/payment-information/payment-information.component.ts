@@ -10,8 +10,6 @@ export class PaymentInformationComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // selectedValue: string;
-
   sources = [
     { value: 'masterCard', viewValue: 'MasterCard' },
     { value: 'visa', viewValue: 'Visa' },

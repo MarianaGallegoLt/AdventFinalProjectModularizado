@@ -13,8 +13,6 @@ export class ContainersTableComponent implements AfterViewInit  {
 
   constructor(private containerService: ContainerService) { }
 
-  //Para que funcione la tabla hice cambios en tsconfig.json
-
   displayedColumns: string[] = ['containerNumber', 'origin', 'destination', 'status', 'description', 'book'];
   dataSource = new MatTableDataSource(this.containerService.llenarTablaContainers());
 

@@ -14,13 +14,7 @@ import { MainLayoutRoutingModule } from '../layouts/main-layout/main-layout-rout
 
 
 @NgModule({
-  declarations: [
-    // ContainerListComponent,
-    // IndexComponent,
-    // LoginComponent,
-    // PaymentProcessComponent,
-    // RequestMoveComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     AngularMaterialModule,
