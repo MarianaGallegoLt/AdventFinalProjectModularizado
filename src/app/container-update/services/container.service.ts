@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { item } from '../interfaces/interfaces.interface';
 
 const ELEMENT_DATA = [
     {issuesBy: 1, qty: 'Hydrogen', fee: 1.0079, total: 'H'},

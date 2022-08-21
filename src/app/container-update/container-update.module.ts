@@ -15,6 +15,8 @@ import { RequestMoveTableComponent } from './components/request-move-components/
 import { Routing } from '../app-routing-module';
 import { IndexComponent } from './pages/index/index.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
+import { LoginLayoutComponent } from './layouts/login-layout/login-layout.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ItemsTableComponent,
     ContainersTableComponent,
     RequestMoveTableComponent,
-    IndexComponent
+    IndexComponent,
+    MainLayoutComponent,
+    LoginLayoutComponent
   ],
   imports: [
     CommonModule,
