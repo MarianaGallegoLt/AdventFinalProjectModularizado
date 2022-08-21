@@ -14,6 +14,6 @@ export class RequestMoveTableComponent implements OnInit {
   }
 
   displayedColumns: string[] = ['issuesBy', 'qty', 'fee', 'total'];
-  dataSource = this.containerService.llenarTabla();
+  dataSource = this.containerService.llenarTablaCart();
 
 }

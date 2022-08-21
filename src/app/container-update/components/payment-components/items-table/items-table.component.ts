@@ -13,6 +13,6 @@ export class ItemsTableComponent implements OnInit {
   ngOnInit(): void {
   }
   displayedColumns: string[] = ['issuesBy', 'qty', 'fee', 'total', 'delete'];
-  dataSource = this.containerService.llenarTabla();
+  dataSource = this.containerService.llenarTablaCart();
 
 }
